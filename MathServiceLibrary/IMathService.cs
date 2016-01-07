@@ -14,14 +14,7 @@ namespace MathServiceLibrary
         [OperationContract]
         int Add(MyNumbers obj);
         [OperationContract]
-        int Subtract(MyNumbers obj);
-        //[OperationContract]
-        //string GetData(int value);
-
-        //[OperationContract]
-        //CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        //// TODO: Add your service operations here
+        int Subtract(MyNumbers obj);        
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
@@ -32,22 +25,6 @@ namespace MathServiceLibrary
         [DataMember]
         public int Number1 { get; set; }
         [DataMember]
-        public int Number2 { get; set; }
-        //bool boolValue = true;
-        //string stringValue = "Hello ";
-
-        //[DataMember]
-        //public bool BoolValue
-        //{
-        //    get { return boolValue; }
-        //    set { boolValue = value; }
-        //}
-
-        //[DataMember]
-        //public string StringValue
-        //{
-        //    get { return stringValue; }
-        //    set { stringValue = value; }
-        //}
+        public int Number2 { get; set; }        
     }
 }
